@@ -11,6 +11,8 @@
 @interface ViewController ()
 - (IBAction)clickAction:(id)sender;
 
+- (IBAction)addAction:(id)sender;
+
 @end
 
 @implementation ViewController
@@ -28,6 +30,12 @@
 - (IBAction)clickAction:(id)sender
 {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提醒" message:@"惦记我" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alert show];
+}
+
+- (IBAction)addAction:(id)sender
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提醒" message:@"新增加" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
     [alert show];
 }
 @end
