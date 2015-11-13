@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
+- (IBAction)clickAction:(id)sender;
 
 @end
 
@@ -24,4 +25,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)clickAction:(id)sender
+{
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提醒" message:@"惦记我" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+    [alert show];
+}
 @end
